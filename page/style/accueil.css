@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e4e9f7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.logo {
+    margin-left: 5px;
+}
+
+.logo img {
+    width: 30px;
+    margin-left: 30px;
+    border-radius: 100px;
+    margin-top: 2px;
+}
+
+.logo p {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #ff7675;
+}
+
+nav {
+    margin-right: 30px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 12px;
+}
+
+li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(64,0,128);
+}
+
+li a img {
+    width: 20px;
+}
+
+ul li a:hover {
+    color: #ff7675;
+}
+
+.banner{
+    height: 630px;
+    background-image: url(../image/art2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h2 {
+    position: relative;
+    text-align: center;
+    line-height: 50vh;
+    font-size: 10vw;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px #ff7675;
+}
+
+.banner a {
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.banner a:hover {
+    color: #fff;
+    background-color:rgb(64,0,128);
+    box-shadow: 0 0 10px rgb(64,0,128), 0 0 40px rgb(64,0,128), 0 0 80px rgb(64,0,128);
+    transition-delay: 1s;
+}
+
+.banner a span {
+    position: absolute;
+    display: block;
+}
+
+.banner a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(64,0,128));
+}
+
+.banner a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.banner a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,rgb(64,0,128));
+}
+
+.banner a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.banner a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(64,0,128));
+}
+
+.banner a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.banner a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(64,0,128));
+}
+
+.banner a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.connexion {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.connexion a {
+    display: flex;
+    align-items: center;
+}
+
+.connexion a img {
+    width: 50px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.contains {
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+}
+
+.image_animée{
+    margin: 30px;
+    width: 1100px;
+    height: 500px;
+    box-shadow: 0px 15px 10px -5px #777 ;
+    background-color: #EDEDED;
+    background-size: cover;
+    animation:fondu 5s ease-in-out infinite both;
+    margin-left: 120px;
+}
+
+
+@keyframes fondu{
+    0%{background-image: url("../image/021.png");}
+    50%{background-image: url("../image/021.png");}
+    75%{background-image: url("../image/022.png");}
+    100%{background-image: url("../image/022.png");}
+}
+
+.contains p {
+    font-size: 18px;
+}
+
+.developper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(64,0,128);
+}
+
+.card {
+    background: #e4e9f7;
+    border-radius: 15px;
+    box-shadow: 0 25px 45px rgba(64, 0, 128,0.5);
+    border: 1px solid rgba(64, 0, 128);
+    border-bottom: 1px solid rgba(64, 0, 128);
+    border-right: 1px solid rgba(64, 0, 128);
+    margin: 50px;
+    padding: 40px;
+}
+
+.img_dev img {
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.social img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.sociaux {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.social {
+    padding: 20px;
+}
